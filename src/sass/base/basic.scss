@@ -1,0 +1,78 @@
+@use "/src/sass/base/variables.scss" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+html {
+    font-family: "Barlow", sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+h1 {
+    font-size: 48px;
+}
+
+body {
+    background-color: $white;
+}
+
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 100%;
+        padding: 0 350px;
+    }
+}
