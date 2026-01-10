@@ -1,0 +1,86 @@
+@media screen and (min-width: 480px) {
+    .header {
+        &__logo-small {
+            display: none;
+        }
+
+        &__logo-full {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__purchases {
+            span {
+                font-size: 24px;
+
+                &:nth-child(1) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .header {
+        &__purchases {
+            column-gap: 30px;
+
+            span {
+                display: none;
+            }
+
+            &-cart {
+                display: none;
+            }
+
+            &-text {
+                display: block;
+            }
+        }
+
+        &__menu {
+            left: -30vw;
+            width: 30vw;
+
+            &-line {
+                width: 30vw;
+            }
+
+            &-link {
+                font-size: 26px;
+            }
+
+            &-input {
+                font-size: 26px;
+            }
+
+            &-cart {
+                font-size: 26px;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        &__burger {
+            display: none;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__links-full {
+            display: flex;
+            flex-direction: row;
+            column-gap: 50px;
+        }
+    }
+}

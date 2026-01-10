@@ -1,0 +1,9 @@
+@use "/src/sass/base/variables.scss" as *;
+
+
+@mixin title {
+    font-family: $fontLato;
+    font-style: normal;
+    line-height: 130%;
+    color: $black;
+}
