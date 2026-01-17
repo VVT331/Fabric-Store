@@ -1,0 +1,18 @@
+@use "/src/sass/base/mixins.scss" as *;
+@use "/src/sass/base/variables.scss" as *;
+
+.button-now {
+    @include button;
+    background-color: $black;
+    color: $white;
+    text-decoration: none;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 52;
+
+    &:hover {
+        background-color: $white;
+        color: $black;
+        border: 1px solid $black;
+    }
+}

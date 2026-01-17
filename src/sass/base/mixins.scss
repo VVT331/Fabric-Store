@@ -7,3 +7,16 @@
     line-height: 130%;
     color: $black;
 }
+
+@mixin button {
+    border-radius: 100px;
+    padding: 13px 80px 18px;
+    width: 236px;
+    height: 55px;
+    font-family: $fontLato;
+    font-weight: 700;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 140%;
+    cursor: pointer;
+}

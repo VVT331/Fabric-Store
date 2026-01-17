@@ -5,8 +5,12 @@
 @use "/src/sass/base/variables.scss";
 
 @use "/src/sass/ui/titles.scss";
+@use "/src/sass/ui/button.scss";
 
 
 @use "/src/sass/blocks/header.scss";
+@use "/src/sass/blocks/head.scss";
+
 
 @use "/src/sass/adaptation/adapHeader.scss";
+@use "/src/sass/adaptation/adapHead.scss";

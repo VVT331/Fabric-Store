@@ -1,0 +1,103 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@media screen and (min-width: 480px) {
+    .head {
+        padding-bottom: 0;
+    }
+
+    .swiper {
+        transform: translateY(-55px);
+
+        &-slide {
+            justify-content: end;
+        }
+    }
+
+    .swiper-pagination {
+        transform: translateY(-50px) !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .head {
+        padding-bottom: 120px;
+        height: 100%;
+
+        &::before {
+            right: 0;
+            height: 100%;
+            width: 31%;
+        }
+
+        &__wrapper {
+            position: relative;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+
+        }
+
+        &__info {
+            margin-top: 30px;
+
+            p {
+                margin-top: 30px;
+            }
+
+            a {
+                margin-top: 45px;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        position: absolute !important;
+        flex-direction: column;
+        row-gap: 30px;
+        transform: translateY(-50%) !important;
+
+    }
+
+    .swiper {
+        transform: translateY(250px) translateX(-100px);
+
+        &-slide {
+            justify-content: center;
+            width: 300px !important;
+            overflow: hidden !important;
+
+        }
+
+        &-img {
+            width: 251px;
+            height: 241px;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .swiper {
+        height: 320px;
+        transform: none;
+
+        &-slide {
+            width: 350px !important;
+            height: 300px !important;
+
+        }
+
+        &-img {
+            width: 310px;
+            height: 260px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .head {
+        padding-top: 180px;
+        padding-bottom: 210px;
+    }
+}
