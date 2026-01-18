@@ -1,0 +1,82 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.popular {
+    padding-bottom: 90px;
+    padding-top: 70px;
+
+    &__swiper {
+        height: 450px !important;
+        margin-top: 40px;
+
+
+        &-slide {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: start;
+
+            &-img {
+                position: relative;
+                display: grid;
+                place-items: center;
+                width: 320px;
+                height: 320px;
+                background-color: $beige;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+
+                img {
+                    width: 240px;
+                    height: 232px;
+                    transition: all 0.3s ease;
+
+
+                }
+            }
+        }
+
+        h4 {
+            text-align: left;
+            width: 320px;
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            width: 320px;
+        }
+
+
+
+    }
+
+    &__navigation {
+        position: relative;
+        height: 20px;
+
+        &-pag {
+            position: absolute !important;
+            display: flex;
+            justify-content: center;
+            bottom: auto !important;
+            column-gap: 30px;
+        }
+
+        &-pag .swiper-pagination-bullet {
+            width: 16px !important;
+            height: 16px !important;
+            background-color: rgb(134, 134, 134) !important;
+            opacity: 0.5 !important;
+        }
+
+        &-pag .swiper-pagination-bullet-active {
+            background-color: $black !important;
+            opacity: 1 !important;
+        }
+
+
+        &-nav {
+            display: none !important;
+        }
+    }
+}

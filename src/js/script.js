@@ -7,30 +7,73 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
 
-    modules: [Pagination, Autoplay],
-    direction: 'horizontal',
-    autoplay: {
-        delay: 4000,
 
-    },
+try {
+    const swiperHead = new Swiper('.head__swiper', {
 
-    slidesPerView: 1,
-    spaceBetween: 20,
-    slidesPerView: 'auto',
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+        modules: [Pagination, Autoplay],
+        direction: 'horizontal',
+        autoplay: {
+            delay: 4000,
 
-    breakpoints: {
-        480: {
-            direction: "vertical",
+        },
+
+        slidesPerView: 1,
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        loop: true,
+        pagination: {
+            el: ".head__swiper-pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            480: {
+                direction: "vertical",
+            }
         }
-    }
-});
+    });
+} catch (e) {
+
+}
+
+try {
+    const swiperPopular = new Swiper('.popular__swiper', {
+
+        modules: [Pagination, Navigation, Autoplay],
+        direction: 'horizontal',
+
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".popular__navigation-pag",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.icon-right',
+            prevEl: '.icon-left',
+        },
+
+        breakpoints: {
+            480: {
+                slidesPerView: 2
+            },
+            1000: {
+                slidesPerView: 3
+            }
+        },
+
+
+
+
+    });
+} catch (e) {
+
+}
+
+
 
 const open = document.querySelector('.header__burger'),
     close = document.querySelector('.header__menu-close'),

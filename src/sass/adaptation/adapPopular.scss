@@ -1,0 +1,187 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@media screen and (min-width: 480px) {
+    .popular {
+
+        &__swiper {
+            margin-top: 40px;
+
+            &-slide {
+                align-content: start;
+
+                &-img {
+                    width: 210px;
+                    height: 234px;
+
+                    img {
+                        width: 160px;
+                        height: 154px;
+                    }
+                }
+            }
+
+            &-info {
+                width: 210px;
+            }
+
+            h4 {
+                width: 210px;
+            }
+
+        }
+
+        &__navigation {
+            transform: translateY(-80px);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .popular {
+        padding-bottom: 110px;
+
+        &__swiper {
+            margin-top: 50px;
+
+            &-slide {
+
+                &-img {
+                    width: 354px;
+                    height: 343px;
+
+                    img {
+                        width: 254px;
+                        height: 243px;
+                    }
+                }
+            }
+
+            &-info {
+                width: 354px;
+            }
+
+            h4 {
+                width: 354px;
+            }
+        }
+
+        &__navigation {
+            margin-top: 20px;
+            transform: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .popular {
+        &__swiper {
+
+            &-slide {
+                &-img {
+                    width: 307px;
+                    height: 298px;
+
+                    img {
+                        width: 207px;
+                        height: 198px;
+                    }
+                }
+            }
+
+            &-info {
+                width: 307px;
+            }
+
+            h4 {
+                width: 307px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .popular {
+        padding-top: 130px;
+
+        &__swiper {
+            margin-top: 60px;
+
+            &-slide {
+
+                &-img {
+                    width: 386px;
+                    height: 376px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 70px;
+                        height: 70px;
+                        display: block;
+                        background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='35' cy='35' r='35' fill='%232C2C2C'/%3E%3Cpath d='M35 52L35 18M52 35L18 35' stroke='%23FDFBF9' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+                        top: 0;
+                        right: 0;
+                        z-index: 3;
+                        transition: all 0.3s ease;
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        border-radius: 100%;
+
+                        img {
+
+                            transform: rotate(10deg) scale(1.1);
+
+                        }
+
+                        &::before {
+
+                            opacity: 1;
+                        }
+                    }
+
+                    img {
+                        width: 266px;
+                        height: 256px;
+                    }
+                }
+            }
+
+            &-info {
+                width: 386px;
+            }
+
+            h4 {
+                width: 386px;
+            }
+        }
+
+        &__navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            column-gap: 326px;
+
+            &-nav {
+                display: flex !important;
+                justify-content: center;
+                width: 30px;
+                height: 20px;
+                border: none;
+                border-color: transparent;
+                background-color: $white;
+                font-size: 28px;
+                z-index: 11;
+                cursor: pointer;
+
+                &::before {
+                    width: auto;
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}

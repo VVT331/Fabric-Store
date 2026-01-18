@@ -3,19 +3,20 @@
 @media screen and (min-width: 480px) {
     .head {
         padding-bottom: 0;
-    }
 
-    .swiper {
-        transform: translateY(-55px);
+        &__swiper {
+            transform: translateY(-55px);
 
-        &-slide {
-            justify-content: end;
+            &-slide {
+                justify-content: end;
+            }
+
+            &-pagination {
+                transform: translateY(-50px) !important;
+            }
         }
     }
 
-    .swiper-pagination {
-        transform: translateY(-50px) !important;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -48,48 +49,54 @@
                 margin-top: 45px;
             }
         }
-    }
 
-    .swiper-pagination {
-        position: absolute !important;
-        flex-direction: column;
-        row-gap: 30px;
-        transform: translateY(-50%) !important;
+        &__swiper {
+            transform: translateY(250px) translateX(-100px);
 
-    }
+            &-slide {
+                justify-content: center;
+                width: 300px !important;
+                overflow: hidden !important;
 
-    .swiper {
-        transform: translateY(250px) translateX(-100px);
+            }
 
-        &-slide {
-            justify-content: center;
-            width: 300px !important;
-            overflow: hidden !important;
+            &-img {
+                width: 251px;
+                height: 241px;
+            }
 
+            &-pagination {
+                position: absolute !important;
+                flex-direction: column;
+                row-gap: 30px;
+                transform: translateY(-50%) !important;
+
+            }
         }
-
-        &-img {
-            width: 251px;
-            height: 241px;
-        }
     }
+
+
+
+
 }
 
 
 @media screen and (min-width: 1000px) {
-    .swiper {
-        height: 320px;
-        transform: none;
+    .head {
+        &__swiper {
+            height: 320px;
+            transform: none;
 
-        &-slide {
-            width: 350px !important;
-            height: 300px !important;
+            &-slide {
+                width: 350px !important;
+                height: 300px !important;
 
-        }
+            }
 
-        &-img {
-            width: 310px;
-            height: 260px;
+            &-img {
+                width: 310px;
+                height: 260px;
+            }
         }
     }
 
