@@ -6,13 +6,20 @@
     background-color: $black;
     color: $white;
     text-decoration: none;
-    transition: all 0.5s;
     position: relative;
     z-index: 52;
 
     &:hover {
         background-color: $white;
         color: $black;
-        border: 1px solid $black;
     }
+}
+
+.button-go {
+    @include button;
+    background-color: $white;
+    color: $black;
+    text-decoration: none;
+    width: 263px;
+    height: 55px;
 }

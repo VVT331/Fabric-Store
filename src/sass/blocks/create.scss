@@ -1,0 +1,44 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.create {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    background-color: $black;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        img {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__comfort {
+        h2 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            margin-top: 20px;
+        }
+    }
+
+    &__sideneert {
+        h3 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            margin-top: 20px;
+        }
+
+        a {
+            display: block;
+            margin-top: 35px;
+        }
+    }
+}
