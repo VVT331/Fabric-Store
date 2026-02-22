@@ -1,0 +1,25 @@
+.create {
+    position: relative;
+    z-index: 1;
+}
+
+.eco {
+    position: relative;
+    z-index: 1;
+}
+
+.logoCreateEco {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (min-width: 1000px) {
+    .logoCreateEco {
+        width: 150px;
+        height: 150px;
+    }
+}
