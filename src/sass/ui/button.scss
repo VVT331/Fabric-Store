@@ -23,3 +23,12 @@
     width: 263px;
     height: 55px;
 }
+
+.button-sbm {
+    @include button;
+    background-color: $black;
+    color: $white;
+    text-decoration: none;
+    width: 214px;
+    height: 55px;
+}

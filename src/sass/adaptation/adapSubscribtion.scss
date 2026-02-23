@@ -1,0 +1,67 @@
+@media screen and (min-width: 480px) {
+    .subscribtion {
+        &__email {
+            &-input {
+                width: 320px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .subscribtion {
+        padding: 90px 0 120px 0;
+
+        &__wrapper {
+            row-gap: 50px;
+        }
+
+        &__info {
+            p {
+                margin-top: 30px;
+            }
+        }
+
+        &__email {
+            &-input {
+                width: 450px;
+            }
+
+            &-btn {
+                margin-top: 45px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .subscribtion {
+        &__wrapper {
+            align-items: center;
+            flex-direction: row;
+            column-gap: 50px;
+        }
+
+        &__email {
+
+            &-input {
+                font-size: 21px;
+
+                &::placeholder {
+                    font-size: 21px;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .subscribtion {
+        padding: 130px 0 140px 0;
+
+        &__wrapper {
+            column-gap: 60px;
+        }
+    }
+}

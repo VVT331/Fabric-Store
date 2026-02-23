@@ -14,6 +14,8 @@
 @use "/src/sass/blocks/create.scss";
 @use "/src/sass/blocks/eco.scss";
 @use "/src/sass/blocks/logoCreateEco.scss";
+@use "/src/sass/blocks/inst.scss";
+@use "/src/sass/blocks/subscribtion.scss";
 
 
 @use "/src/sass/adaptation/adapHeader.scss";
@@ -21,3 +23,5 @@
 @use "/src/sass/adaptation/adapPopular.scss";
 @use "/src/sass/adaptation/adapCreate.scss";
 @use "/src/sass/adaptation/adapEco.scss";
+@use "/src/sass/adaptation/adapInst.scss";
+@use "/src/sass/adaptation/adapSubscribtion.scss";
