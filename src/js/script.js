@@ -74,17 +74,53 @@ try {
 }
 
 
+document.addEventListener('DOMContentLoaded', () => {
 
-const open = document.querySelector('.header__burger'),
-    close = document.querySelector('.header__menu-close'),
-    menu = document.querySelector('.header__menu');
+    // menu
 
-open.addEventListener('click', () => {
-    menu.classList.add('header__menu_active');
-    document.body.style.overflow = 'hidden';
-});
+    const open = document.querySelector('.header__burger'),
+        close = document.querySelector('.header__menu-close'),
+        menu = document.querySelector('.header__menu');
 
-close.addEventListener('click', () => {
-    menu.classList.remove('header__menu_active');
-    document.body.style.overflow = '';
+    open.addEventListener('click', () => {
+        menu.classList.add('header__menu_active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    close.addEventListener('click', () => {
+        menu.classList.remove('header__menu_active');
+        document.body.style.overflow = '';
+    });
+
+    // footer
+
+    const bntMenu = document.querySelectorAll('.footer__menu-btn'),
+        elementsMenu = document.querySelectorAll('.footer__menu-elements'),
+        arrowsBtnMenu = document.querySelectorAll('.icon-down'),
+        bodyWidth = window.innerWidth;
+
+    function toggleFooterMenu(i) {
+        if (elementsMenu[i].classList.contains('footer__menu_active') && arrowsBtnMenu[i].classList.contains('footer__menu-btn_active')) {
+            elementsMenu[i].classList.remove('footer__menu_active');
+            arrowsBtnMenu[i].classList.remove('footer__menu-btn_active');
+        } else {
+            elementsMenu[i].classList.add('footer__menu_active');
+            arrowsBtnMenu[i].classList.add('footer__menu-btn_active');
+        }
+    }
+
+    if (bodyWidth < 768) {
+        bntMenu.forEach((btn, i) => {
+            btn.addEventListener('click', () => {
+                toggleFooterMenu(i);
+            });
+        });
+    } else {
+        elementsMenu.forEach((element) => {
+            element.classList.add('footer__menu_active');
+        });
+        arrowsBtnMenu.forEach((arrow) => {
+            arrow.classList.add('footer__menu-btn_active');
+        });
+    }
 });

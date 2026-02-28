@@ -1,0 +1,120 @@
+@use "/src/sass/base/variables.scss" as *;
+
+@media screen and (min-width: 468px) {
+    .footer {
+        &__wrapper {
+            row-gap: 50px;
+        }
+
+        &__shell {
+            flex-direction: row;
+            column-gap: 50px;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        padding: 90px 0px 50px 0;
+
+        &__menu {
+            flex-direction: row;
+            justify-content: space-between;
+
+            &-part {
+                border: none;
+                padding-bottom: 0;
+            }
+
+            &-btn {
+                cursor: auto;
+
+                span {
+                    display: none;
+                }
+
+            }
+
+            &-elements {
+                margin-top: 30px;
+            }
+        }
+
+        &__copyright {
+            justify-content: start;
+            column-gap: 50px;
+
+            h5 {
+                font-size: 17px;
+            }
+
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .footer {
+        padding: 90px 0 120px 0;
+
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__shell {
+            flex-direction: column;
+            align-items: start;
+
+            &-copyright {
+                display: flex;
+                flex-direction: column;
+                row-gap: 20px;
+                margin-top: 27px;
+
+                h5 {
+                    font-weight: 400;
+                    font-size: 17px;
+                    font-style: normal;
+                    line-height: 130%;
+                    color: $white;
+                    opacity: 0.3;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 17px;
+                    font-style: normal;
+                    line-height: 130%;
+                    color: $white;
+                    opacity: 0.3;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &__menu {
+            column-gap: 79px;
+        }
+
+        &__copyright {
+            display: none;
+
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        padding: 150px 0;
+
+        &__menu {
+            column-gap: 158px;
+        }
+    }
+}
