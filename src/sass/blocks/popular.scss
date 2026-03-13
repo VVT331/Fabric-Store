@@ -1,82 +1,84 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .popular {
-    padding-bottom: 90px;
-    padding-top: 70px;
+    padding: 70px 0 90px 0;
 
-    &__swiper {
-        height: 450px !important;
+    &__slider {
+        position: relative;
         margin-top: 40px;
+        place-items: center;
 
+        &-wrapper {
+            height: 375px;
+            width: 320px;
+            overflow: hidden;
+        }
+
+        &-tape {
+            display: flex;
+            transition: all 0.3s ease-in-out;
+        }
 
         &-slide {
-            display: flex !important;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-content: start;
-
             &-img {
                 position: relative;
                 display: grid;
                 place-items: center;
-                width: 320px;
-                height: 320px;
                 background-color: $beige;
                 border-radius: 25px;
+                width: 320px;
+                height: 320px;
                 transition: all 0.3s ease;
 
                 img {
                     width: 240px;
                     height: 232px;
                     transition: all 0.3s ease;
-
-
                 }
+            }
+
+            &-info {
+                display: flex;
+                justify-content: space-between;
+                width: 320px;
+            }
+
+            h4 {
+                text-align: left;
+                width: 320px;
             }
         }
 
-        h4 {
-            text-align: left;
-            width: 320px;
-        }
-
-        &-info {
-            display: flex;
-            justify-content: space-between;
-            width: 320px;
-        }
-
-
-
-    }
-
-    &__navigation {
-        position: relative;
-        height: 20px;
-
-        &-pag {
-            position: absolute !important;
+        &-navigation {
+            position: relative;
             display: flex;
             justify-content: center;
-            bottom: auto !important;
+            margin-top: 40px;
+            align-items: center;
+            column-gap: 50px;
+
+            button {
+                display: none;
+            }
+        }
+
+        &-dots {
+            padding: 0;
+            display: flex;
             column-gap: 30px;
+            transform: translateY(30%);
         }
 
-        &-pag .swiper-pagination-bullet {
-            width: 16px !important;
-            height: 16px !important;
-            background-color: rgb(134, 134, 134) !important;
-            opacity: 0.5 !important;
+        &-dot {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            border-radius: 100%;
+            background-color: #2C2C2C;
+            list-style: none;
+            opacity: 0.3;
         }
 
-        &-pag .swiper-pagination-bullet-active {
-            background-color: $black !important;
-            opacity: 1 !important;
-        }
-
-
-        &-nav {
-            display: none !important;
-        }
     }
+
 }

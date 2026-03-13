@@ -2,37 +2,33 @@
 
 @media screen and (min-width: 480px) {
     .head {
-        padding-bottom: 0;
 
-        &__swiper {
-            transform: translateY(-55px);
+        &__slider {
+            margin-top: 0;
+            transform: translateY(-50px);
 
-            &-slide {
-                justify-content: end;
-            }
-
-            &-pagination {
-                transform: translateY(-50px) !important;
+            &-wrapper {
+                transform: translateX(120px);
             }
         }
     }
-
 }
 
 @media screen and (min-width: 768px) {
     .head {
+        position: relative;
         padding-bottom: 120px;
         height: 100%;
+        overflow: visible;
 
         &::before {
             right: 0;
             height: 100%;
-            width: 31%;
+            width: 41%;
         }
 
         &__wrapper {
             position: relative;
-            align-items: center;
             display: grid;
             grid-template-columns: 1fr 1fr auto;
 
@@ -50,52 +46,101 @@
             }
         }
 
-        &__swiper {
-            transform: translateY(250px) translateX(-100px);
+        &__slider {
+            transform: none;
+            display: flex;
+            align-items: center;
+
+            &-wrapper {
+                transform: translateY(300px) translateX(-120px);
+                align-items: normal;
+
+            }
+
+            &-tape {
+                flex-direction: column;
+            }
 
             &-slide {
-                justify-content: center;
-                width: 300px !important;
-                overflow: hidden !important;
 
+                img {
+                    width: 220px;
+                    height: 210px;
+                }
             }
 
-            &-img {
-                width: 251px;
-                height: 241px;
-            }
-
-            &-pagination {
-                position: absolute !important;
+            &-dots {
+                margin-top: 0;
                 flex-direction: column;
                 row-gap: 30px;
-                transform: translateY(-50%) !important;
-
             }
         }
     }
-
-
-
-
 }
+
 
 
 @media screen and (min-width: 1000px) {
     .head {
-        &__swiper {
-            height: 320px;
-            transform: none;
 
-            &-slide {
-                width: 350px !important;
-                height: 300px !important;
+        &::before {
+            width: 31%;
+        }
+
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__slider {
+            justify-content: space-between;
+
+            &-wrapper {
+                position: relative;
+                transform: none;
+                width: 360px;
+                height: 360px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 108px;
+                    height: 108px;
+                    top: 0px;
+                    left: 30px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='111' height='111' viewBox='0 0 131 131' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M109.5 1.52413C73.5 0.690984 1.5 21.1197 1.5 109.5' stroke='%232C2C2C' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    z-index: 200;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 108px;
+                    height: 108px;
+                    bottom: -15px;
+                    right: 0px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='111' height='111' viewBox='0 0 131 131' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 109.476C37.5 110.309 109.5 89.8802 109.5 1.5' stroke='%23FDFBF9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                    z-index: 200;
+                }
 
             }
 
-            &-img {
-                width: 310px;
-                height: 260px;
+            &-tape {
+                position: relative;
+                z-index: 1;
+            }
+
+            &-slide {
+                position: relative;
+                z-index: 1;
+
+                img {
+                    width: 260px;
+                    height: 260px;
+                }
+            }
+
+            &-dots {
+                transform: none;
             }
         }
     }
@@ -106,5 +151,31 @@
     .head {
         padding-top: 180px;
         padding-bottom: 210px;
+
+        &__wrapper {}
+
+        &__slider {
+            &-wrapper {
+                width: 400px;
+                height: 400px;
+
+                &::after {
+                    top: 0px;
+                    left: 30px;
+                }
+
+                &::before {
+                    bottom: -15px;
+                    right: 0px;
+                }
+            }
+
+            &-slide {
+                img {
+                    width: 320px;
+                    height: 320px;
+                }
+            }
+        }
     }
 }
