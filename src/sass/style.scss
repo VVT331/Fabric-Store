@@ -1,29 +1,29 @@
-@use "/src/sass/libs/modern-normalize.min.css";
-@use "/src/sass/libs/fontello.css";
+@use "libs/modern-normalize.min.css";
+@use "libs/fontello.css";
 
-@use "/src/sass/base/basic.scss";
-@use "/src/sass/base/variables.scss";
+@use "base/basic.scss";
+@use "base/variables.scss";
 
-@use "/src/sass/ui/titles.scss";
-@use "/src/sass/ui/button.scss";
-
-
-@use "/src/sass/blocks/header.scss";
-@use "/src/sass/blocks/head.scss";
-@use "/src/sass/blocks/popular.scss";
-@use "/src/sass/blocks/create.scss";
-@use "/src/sass/blocks/eco.scss";
-@use "/src/sass/blocks/logoCreateEco.scss";
-@use "/src/sass/blocks/inst.scss";
-@use "/src/sass/blocks/subscribtion.scss";
-@use "/src/sass/blocks/footer.scss";
+@use "ui/titles.scss";
+@use "ui/button.scss";
 
 
-@use "/src/sass/adaptation/adapHeader.scss";
-@use "/src/sass/adaptation/adapHead.scss";
-@use "/src/sass/adaptation/adapPopular.scss";
-@use "/src/sass/adaptation/adapCreate.scss";
-@use "/src/sass/adaptation/adapEco.scss";
-@use "/src/sass/adaptation/adapInst.scss";
-@use "/src/sass/adaptation/adapSubscribtion.scss";
-@use "/src/sass/adaptation/adapFooter.scss";
+@use "blocks/header.scss";
+@use "blocks/head.scss";
+@use "blocks/popular.scss";
+@use "blocks/create.scss";
+@use "blocks/eco.scss";
+@use "blocks/logoCreateEco.scss";
+@use "blocks/inst.scss";
+@use "blocks/subscribtion.scss";
+@use "blocks/footer.scss";
+
+
+@use "adaptation/adapHeader.scss";
+@use "adaptation/adapHead.scss";
+@use "adaptation/adapPopular.scss";
+@use "adaptation/adapCreate.scss";
+@use "adaptation/adapEco.scss";
+@use "adaptation/adapInst.scss";
+@use "adaptation/adapSubscribtion.scss";
+@use "adaptation/adapFooter.scss";

@@ -1,5 +1,5 @@
-@use "/src/sass/base/mixins.scss" as *;
-@use "/src/sass/base/variables.scss" as *;
+@use "../base/mixins.scss" as *;
+@use "../base/variables.scss" as *;
 
 .button-now {
     @include button;

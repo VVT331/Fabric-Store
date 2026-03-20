@@ -1,4 +1,4 @@
-@use "/src/sass/base/variables.scss" as *;
+@use "../base/variables.scss" as *;
 
 @media screen and (min-width: 480px) {
     .head {
@@ -151,8 +151,6 @@
     .head {
         padding-top: 180px;
         padding-bottom: 210px;
-
-        &__wrapper {}
 
         &__slider {
             &-wrapper {

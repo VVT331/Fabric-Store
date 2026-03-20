@@ -1,0 +1,33 @@
+{
+  "catalogPopular": [
+    {
+      "img": "src/img/imgFabric/Vivianna.png",
+      "altimg": "Vivianna",
+      "title": "Gerhild",
+      "size": "130x170",
+      "price": 56
+    },
+    {
+      "img": "src/img/imgFabric/Evali.png",
+      "altimg": "Evali",
+      "title": "Evali",
+      "size": "90x120",
+      "price": 76
+    },
+    {
+      "img": "src/img/imgFabric/Kersti.png",
+      "altimg": "Kersti",
+      "title": "Kersti",
+      "size": "160x200",
+      "price": 44
+    },
+    {
+      "img": "src/img/imgFabric/Dagnhild.png",
+      "altimg": "Dagnhild",
+      "title": "Dagnhild",
+      "size": "110x140",
+      "price": 90
+    }
+  ],
+  "requests": []
+}
