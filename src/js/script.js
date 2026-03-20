@@ -63,6 +63,40 @@ document.addEventListener('DOMContentLoaded', () => {
         return await resources.json();
     }
 
+    // Sending data to the server
+
+    const postData = async (url, data) => {
+        const resources = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (!resources.ok) {
+            throw new Error(`An error has occurred, status${resources.status}`);
+        }
+
+        return await resources.json()
+    }
+
+    // Sending mail to the server from the section Subscribtion
+
+    const formSubscribtion = document.querySelector('.subscribtion__form');
+
+    formSubscribtion.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(formSubscribtion);
+        const jsonSubscribtion = Object.fromEntries(formData.entries());
+
+        postData('http://localhost:3000/requests', jsonSubscribtion)
+            .finally(() => {
+                formSubscribtion.reset();
+            })
+    });
+
     // slide formation Popular
 
     const allSlides = [];
@@ -99,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getData("http://localhost:3000/catalogPopular")
         .then((data) => {
             data.forEach(({ img, altimg, title, size, price }) => {
-                const slide = new SlideFormationPopular(img, altimg, title, size, price, '.popular__slider-tape').formation();
+                new SlideFormationPopular(img, altimg, title, size, price, '.popular__slider-tape').formation();
             });
             initSliderPopular();
         });

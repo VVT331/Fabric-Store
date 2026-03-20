@@ -5,28 +5,32 @@
       "altimg": "Vivianna",
       "title": "Gerhild",
       "size": "130x170",
-      "price": 56
+      "price": 56,
+      "id": "5325"
     },
     {
       "img": "src/img/imgFabric/Evali.png",
       "altimg": "Evali",
       "title": "Evali",
       "size": "90x120",
-      "price": 76
+      "price": 76,
+      "id": "3bdb"
     },
     {
       "img": "src/img/imgFabric/Kersti.png",
       "altimg": "Kersti",
       "title": "Kersti",
       "size": "160x200",
-      "price": 44
+      "price": 44,
+      "id": "13df"
     },
     {
       "img": "src/img/imgFabric/Dagnhild.png",
       "altimg": "Dagnhild",
       "title": "Dagnhild",
       "size": "110x140",
-      "price": 90
+      "price": 90,
+      "id": "9f74"
     }
   ],
   "requests": []
